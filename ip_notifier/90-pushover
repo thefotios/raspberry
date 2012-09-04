@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Put this file in /etc/NetworkManager/dispatcher.d/
+
+case "$2" in
+  up)
+    /home/user/bin/ip.rb &
+    ;;
+esac
